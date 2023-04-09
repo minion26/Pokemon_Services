@@ -7,6 +7,6 @@ This is a project where I started to learn about Java Springboot, Docker and the
     
  :video_game:  3. Breeding that breeds 2 pokemons that we want. We give the id of the pokemon in the request.
     
- :chess_pawn: 4. Whos-That-Pokemon gives a random pokemon with the image black so only the contour will be seen and we have to guess the right pokemon. If we say the incorrect answer, it will appear the correct one on the screen.
+ :chess_pawn:  4. Whos-That-Pokemon gives a random pokemon with the image black so only the contour will be seen and we have to guess the right pokemon. If we say the incorrect answer, it will appear the correct one on the screen.
     
-   :yo_yo:  5. Starting-page (in work) is the main page. If we want to play the game Whos-That-Pokemon we'll click on the button, if we want to breed them we'll right the names and it will automatic transform in the correct id for the Breeding service to do his job. 
+   :yo_yo:   5. Starting-page (in work) is the main page. If we want to play the game Whos-That-Pokemon we'll click on the button, if we want to breed them we'll right the names and it will automatic transform in the correct id for the Breeding service to do his job. 
