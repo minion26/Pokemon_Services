@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Starting Page</title>
+    <style>
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0 0 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to Pokemon Mania!!</h1>
+<details >
+    <summary>
+        Do you want to play 'Whos that pokemon'?
+        <svg class="control-icon control-icon-expand" width="24" height="24" ><!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />--></svg>
+        <svg class="control-icon control-icon-close" width="24" height="24" ><!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />--></svg>
+    </summary>
+    <a href="http://localhost:8085/" target="_blank">Start here</a>
+</details>
+
+<details>
+
+    <summary>
+        Do you want to breed your pokemons?
+        <svg class="control-icon control-icon-expand" width="24" height="24" ><!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />--></svg>
+        <svg class="control-icon control-icon-close" width="24" height="24" ><!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />--></svg>
+    </summary>
+    <form th:action="@{/breed}" method="post">
+        <label for="name1">Enter your first pokemon's name:</label>
+        <input type="text" id="name1" name="name1" />
+        <label for="name2">Enter your second pokemon's name:</label>
+        <input type="text" id="name2" name="name2" />
+
+    </form>
+    <a th:href="@{'http://localhost:8083/breed?pokeId1=' + ${pokeId1} + '&pokeId2=' + ${pokeId2} }">Breed</a>
+    <!--<link th:href="@{'http://localhost:8083/breed?pokeId1=' + ${pokeId1} + '&pokeId2=' +  ${pokeId2}"  target="_blank">-->
+</details>
+</body>
+</html>
